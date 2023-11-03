@@ -39,8 +39,30 @@
 </header>
 
 
+<!--Carousel Section-->
+<style>
+    #robotcarousel {
+        width: 600px; /* Set a fixed width for the carousel */
+        height: 400px; /* Set a fixed height for the carousel */
+        margin: 0 auto; /* Center the carousel horizontally */
+        overflow: hidden; /* Hide any overflow from images, so that the image size is consistant with the set demensions */
+    }
+    
+    #robotcarousel img {
+        width: 100%; /* Make the images fill the width of the carousel */
+        height: 100%; /* Make the images fill the height of the carousel */
+        object-fit: cover; /* Ensure the images cover the entire container */
+    }
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+        position: absolute;
+        width: 40px;
+        top: 50%; /* Center vertically */
+        transform: translateY(-50%); /* Center vertically */
+    }
+</style>
 
-<!-- Carousel Section -->
 <div class="container-fluid mt-4">
     <div id="robotcarousel" class="carousel slide" data-bs-interval="3000" data-pause="true" data-bs-ride="true">
         <div class="carousel-indicators">
@@ -49,10 +71,10 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item" data-bs-interval="3000">
-                <img class="d-block w-100" src="Cursed1.png" alt="swamp">
+                <img class="d-block w-100" src="building.jpg" alt="swamp">
             </div>
             <div class="carousel-item active">
-                <img class="d-block w-100" src="Cursed2.jpg" alt="flight">
+                <img class="d-block w-100" src="lecturehall.jpg" alt="flight">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#robotcarousel" data-bs-slide="prev">
@@ -65,23 +87,6 @@
         </button>
     </div>
 </div>
-
-<style>
-    
-    .carousel-control-prev,
-    .carousel-control-next {
-        align-self: center;
-        position: absolute;
-        width: 40px; 
-    }
-
-    
-    #robotcarousel {
-        margin: auto; 
-        max-width:40%; 
-        max-height: 40%;
-    }
-</style>
 
 
 
